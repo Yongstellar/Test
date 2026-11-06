@@ -812,7 +812,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 00b4da736e5974b4dbd52bc4d21afee4, type: 2}
   - {fileID: 11400000, guid: 9123c8b9f074f6848b2196c0cc026872, type: 2}
   - {fileID: 11400000, guid: d81c677371a67c44e9f12fdb8c8622e4, type: 2}
-  logEvents: 1
+  logEvents: 0
 --- !u!1 &983783876
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,6 +1145,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2097381813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2097381815}
+  - component: {fileID: 2097381814}
+  m_Layer: 0
+  m_Name: PlacementManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2097381814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097381813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aedc3300d6ba2ce47b7fac2472ec0bbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlacementManager
+  dropdown: {fileID: 963453116}
+  targetCamera: {fileID: 330585545}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!4 &2097381815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097381813}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.4829, y: 0.67032, z: 3.32884}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1155,3 +1204,4 @@ SceneRoots:
   - {fileID: 1798293485}
   - {fileID: 295550610}
   - {fileID: 7876369}
+  - {fileID: 2097381815}
